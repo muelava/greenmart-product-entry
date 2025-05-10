@@ -1,54 +1,52 @@
-# React + TypeScript + Vite
+# Green Mart Product Entry – Test Case (React + TypeScript + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend-only solution for a fullstack developer test case using **React**, **TypeScript**, and **Vite**. This project implements a product input form for *Green Mart* where users can dynamically manage product details and associated categories with image uploads.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 18**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- No backend or database – all state is handled client-side only
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✅ Features Implemented
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Add up to **5 products**, each with:
+  - 📝 Product Name (text input)
+  - 📄 Product Description (textarea)
+  - ➕/❌ Add & Remove buttons
+- Each product can have up to **3 categories**, each with:
+  - 🖼️ Image uploader (JPG/JPEG/PNG only)
+  - 🗑️ Delete image with confirmation modal
+  - 🏷️ Category name (text input for better context)
+- ✨ Auto-hide add buttons & show "maximum input" notification after limits
+- 💡 User-friendly layout and visual feedback for all actions
+
+---
+
+## 📦 Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📝 Developer Notes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- The test case did not require a backend or persistent storage — this is a frontend-only implementation with state held in memory.
+- I added some enhancements for clarity and better UX:
+  - Product description field, as referenced in the Objective section of the test case.
+  - Category name field to give meaningful context to uploaded images.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📸 Screenshot
+
+- https://prnt.sc/njfKkBfx_KC0
+
+## ✅ Status
+✅ Completed and fully functional according to test requirements.
