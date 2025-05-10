@@ -44,6 +44,9 @@ npm run dev
   - Product description field, as referenced in the Objective section of the test case.
   - Category name field to give meaningful context to uploaded images.
 
+## 👁️Demo
+- https://greenmart-product-entry.vercel.app/
+
 ## 📸 Screenshot
 
 - https://prnt.sc/njfKkBfx_KC0
