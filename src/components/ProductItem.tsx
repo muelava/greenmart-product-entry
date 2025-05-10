@@ -42,7 +42,7 @@ const ProductItem = ({ index, product, onRemove, onUpdate }: Props) => {
                 <input
                     type="text"
                     placeholder="Nama Produk"
-                    className="border-b border-slate-200 focus:border-emerald-500 outline-0 flex-auto text-base placeholder:text-sm py-2 transition-all duration-300"
+                    className="border-b border-slate-200 focus:border-emerald-500 outline-0 w-full text-base py-2 transition-all duration-300"
                     value={product.name}
                     onChange={(e) => onUpdate({ name: e.target.value })}
                     autoFocus

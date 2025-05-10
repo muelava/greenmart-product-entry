@@ -60,7 +60,7 @@ const CategoryItem = ({ category, onRemove, onUpdate }: Props) => {
 
             {/* Modal Confirm */}
             {showConfirm && (
-                <div className="fixed bg-neutral-700/40 left-0 right-0 bottom-0 top-0 z-10 flex items-center">
+                <div className="fixed bg-neutral-700/40 left-0 right-0 bottom-0 top-0 z-10 flex items-center p-3">
                     <div className="bg-white w-md mx-auto p-3 rounded-xl">
                         <p>Apakah Anda Yakin untuk Menghapus Gambar?</p>
                         <div className="flex gap-3 mt-10">
